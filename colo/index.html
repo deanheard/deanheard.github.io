@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30583876-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-30583876-2');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colo Overview">
+    <meta name="author" content="HeardTech">
+
+    <title>HeardTech | Colo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/creative.min.css" rel="stylesheet">
+
+    <link href="/css/iframe.css" rel="stylesheet">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">Heard Technologies</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#software">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex" style="background-image: url('img/header_colo.jpg');">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">            
+            <h1 class="text-uppercase">
+              <strong>Colo</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">            
+            <p class="text-faded mb-5">Controlling Cololight from the Command Line</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#colo">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-dark text-white" id="colo">
+      <div class="container">        
+        <h2>Introduction</h2>            
+        <p>Cololight Pro is a <a href="https://cololight.co.uk/" target="_new">wifi-aware lighting system</a> that is controlled by an application on your Android or iOS device. It's similar in concept to a <a href="https://nanoleaf.me/" target="_new">Nanoleaf</a>. "Colo" is my .NET Core solution that can be run from the Command Line on Windows, MacOS and Linux. Being Command Line based means you can integrate it into most scripting solutions on any of those platforms.</p>        
+        <p class="text-center"><img class="img-fluid" src="/img/colo/cololight.png" alt="Cololight Example"/></p>
+        <p>&nbsp;</p>
+      </div>        
+
+      <div class="container">        
+        <h2>Usage</h2>        
+        <p>Currently, only source code is provided so you'll need to download it locally and build from there. Instructions for doing this are located within the GitHub Repo.</p>                
+        <p>Once built, the following commands are possible:</p>                
+        <pre><code>Usage:  [options]
+
+Options:
+  -?|-h|--help              Show help information
+  -a|--address &lt;IPADDRESS&gt;  The IP address of the Cololight device you want to instruct
+  -o|--on[:&lt;BOOL&gt;]          True to turn the light on, false to turn it off
+  -c|--colour[:&lt;COLOUR&gt;]    Sets the base colour to one of the System.Drawing.Color types
+                            Allowed values are: ActiveBorder, ActiveCaption, ActiveCaptionText, AppWorkspace, Control,
+                            ControlDark, ControlDarkDark, ControlLight, ControlLightLight, ControlText, Desktop,
+                            GrayText, Highlight, HighlightText, HotTrack, InactiveBorder, InactiveCaption,
+                            InactiveCaptionText, Info, InfoText, Menu, MenuText, ScrollBar, Window, WindowFrame,
+                            WindowText, Transparent, AliceBlue, AntiqueWhite, Aqua, Aquamarine, Azure, Beige, Bisque,
+                            Black, BlanchedAlmond, Blue, BlueViolet, Brown, BurlyWood, CadetBlue, Chartreuse, Chocolate,
+                            Coral, CornflowerBlue, Cornsilk, Crimson, Cyan, DarkBlue, DarkCyan, DarkGoldenrod, DarkGray,
+                            DarkGreen, DarkKhaki, DarkMagenta, DarkOliveGreen, DarkOrange, DarkOrchid, DarkRed,
+                            DarkSalmon, DarkSeaGreen, DarkSlateBlue, DarkSlateGray, DarkTurquoise, DarkViolet, DeepPink,
+                            DeepSkyBlue, DimGray, DodgerBlue, Firebrick, FloralWhite, ForestGreen, Fuchsia, Gainsboro,
+                            GhostWhite, Gold, Goldenrod, Gray, Green, GreenYellow, Honeydew, HotPink, IndianRed, Indigo,
+                            Ivory, Khaki, Lavender, LavenderBlush, LawnGreen, LemonChiffon, LightBlue, LightCoral,
+                            LightCyan, LightGoldenrodYellow, LightGray, LightGreen, LightPink, LightSalmon,
+                            LightSeaGreen, LightSkyBlue, LightSlateGray, LightSteelBlue, LightYellow, Lime, LimeGreen,
+                            Linen, Magenta, Maroon, MediumAquamarine, MediumBlue, MediumOrchid, MediumPurple,
+                            MediumSeaGreen, MediumSlateBlue, MediumSpringGreen, MediumTurquoise, MediumVioletRed,
+                            MidnightBlue, MintCream, MistyRose, Moccasin, NavajoWhite, Navy, OldLace, Olive, OliveDrab,
+                            Orange, OrangeRed, Orchid, PaleGoldenrod, PaleGreen, PaleTurquoise, PaleVioletRed,
+                            PapayaWhip, PeachPuff, Peru, Pink, Plum, PowderBlue, Purple, Red, RosyBrown, RoyalBlue,
+                            SaddleBrown, Salmon, SandyBrown, SeaGreen, SeaShell, Sienna, Silver, SkyBlue, SlateBlue,
+                            SlateGray, Snow, SpringGreen, SteelBlue, Tan, Teal, Thistle, Tomato, Turquoise, Violet,
+                            Wheat, White, WhiteSmoke, Yellow, YellowGreen, ButtonFace, ButtonHighlight, ButtonShadow,
+                            GradientActiveCaption, GradientInactiveCaption, MenuBar, MenuHighlight
+  -rgb|--rgb[:&lt;RRGGBB&gt;]     Sets the base colour a custom HTML defined colour
+  -e|--effect[:&lt;EFFECT&gt;]    Sets the animated Effect of the lights
+                            Allowed values are: Club80s, CherryBlossom, CocktailParade, Instagrammer, Pensieve,
+                            Savasana, Sunrise, TheCircus, Unicorns, Christmas, RainbowFlow, MusicMode
+  -b|--brightness[:&lt;N&gt;]     Sets the brightness as a percentage between 0 and 100</code></pre>
+        <p>The same help can be accessed by running <code>colo --help</code> at the command line/shell.</p>
+        <p>You need to always send the IP Address of your Cololight Pro device on your network. I'd suggest giving it a static IP if you are scripting changes to the light. Multiple commands can be issued at the same time. So for example, the following turns on the light, sets the brightness to half-way and the colour to magenta:</p>
+        <p><code>colo --address 192.168.0.100 --on:true --brightness:50 --colour:Magenta</code></p>
+        <p>... and in concise mode:</p>
+        <p><code>colo -a 192.168.0.100 -o:true -b:50 -c:Magenta</code></p>
+        <p>&nbsp;</p>
+      </div>  
+
+      <div class="container">        
+        <h2>Credits</h2>
+        <p>Background information for this project came from <a href="https://haus-automatisierung.com/projekt/2019/04/05/projekt-cololight-fhem.html" target="_new">Matthias Kleine</a> whom had already gathered the command strings needed to control the light.</p>
+        <p>&nbsp;</p>
+      </div>  
+    </section>    
+
+    <section class="bg-light">
+      <div class="container text-center">        
+        <p><a class="btn btn-primary btn-xl sr-button" href="https://github.com/deanheard/colo">Download from Github <i class="fab fa-github"></i></a></p>        
+      </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">        
+        <hr class="my-4">
+        <p><img src="/img/kiwi_x2.png" width="32" height="32"> Proudly designed in New&nbsp;Zealand. Copyright Heard Technologies 2018-2021</p>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/creative.min.js"></script>
+
+  </body>
+
+</html>
