@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWYCDKWD84"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NWYCDKWD84');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lightcycle Overview">
+    <meta name="author" content="HeardTech">
+
+    <title>HeardTech | Lightcycle</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/creative.min.css" rel="stylesheet">
+
+    <link href="/css/iframe.css" rel="stylesheet">
+
+    <style>
+      .pulse-glow-yellow {
+        animation: pulse-glow-yellow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+        display: inline-block; 
+        width: 66px; 
+        height: 66px; 
+        background-color: #fde047;
+        padding: 0.1em 0.3em;         
+        border-radius: 0.2em;
+      }
+
+      @keyframes pulse-glow-yellow {
+        0%, 100% {
+          opacity: 1;
+          box-shadow: 0 0 12px #fde047;          
+        }
+        50% {
+          opacity: 0.5;
+          box-shadow: 0 0 6px #fde047; /* Scales the glow intensity down in the middle */      
+        }
+      }
+
+      .pulse-glow-orange {
+        animation: pulse-glow-orange 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+        display: inline-block; 
+        width: 66px; 
+        height: 66px; 
+        background-color: #fdba74;
+        padding: 0.1em 0.3em;         
+        border-radius: 0.2em;
+      }
+
+      @keyframes pulse-glow-orange {
+        0%, 100% {
+          opacity: 1;
+          box-shadow: 0 0 12px #fdba74;          
+        }
+        50% {
+          opacity: 0.5;
+          box-shadow: 0 0 6px #fdba74; /* Scales the glow intensity down in the middle */      
+        }
+      }
+
+      .pulse-glow-blue {
+        animation: pulse-glow-blue 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+        display: inline-block; 
+        width: 66px; 
+        height: 66px; 
+        background-color: #67e8f9;
+        padding: 0.1em 0.3em;         
+        border-radius: 0.2em;
+      }
+
+      @keyframes pulse-glow-blue {
+        0%, 100% {
+          opacity: 1;
+          box-shadow: 0 0 12px #67e8f9;          
+        }
+        50% {
+          opacity: 0.5;
+          box-shadow: 0 0 6px #67e8f9; /* Scales the glow intensity down in the middle */      
+        }
+      }
+
+      .tron-grid {
+        position: relative;
+        background-color: #000;
+
+        background-image:
+          linear-gradient(#00ffff22 1px, transparent 1px),
+          linear-gradient(90deg, #00ffff22 1px, transparent 1px);
+
+        background-size: 24px 24px;
+
+        box-shadow:
+          inset 0 0 80px rgba(0, 255, 255, 0.1);
+
+          z-index: -2;
+      }
+
+      .highlight {
+        position: absolute;
+        width: 23px;
+        height: 23px;  
+        z-index: -1;     
+        
+        animation: highlight 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      @keyframes highlight{
+        0%, 100% {
+          opacity: 1;
+          box-shadow: 0 0 6px;          
+        }
+        50% {
+          opacity: 0.7;
+          box-shadow: 0 0 3px; /* Scales the glow intensity down in the middle */      
+        }
+      }
+
+      .user-trail {
+        position: absolute;
+        width: 23px;
+        height: 23px;  
+        z-index: -1;     
+        
+        background-color: #0e7490;
+        box-shadow: 0 0 4px #22d3ee;
+      }
+
+      .computer-trail {
+        position: absolute;
+        width: 23px;
+        height: 23px;  
+        z-index: -1;     
+        
+        background-color: #ea580c;
+        box-shadow: 0 0 4px #f97316;
+      }
+    </style>
+  </head>
+
+  <body id="page-top">
+  <script>
+    function getBrowserName() {
+      const userAgent = navigator.userAgent;
+      
+      // 1. Check for modern UserAgentData API (supported in Chromium-based browsers)
+      if (navigator.userAgentData && navigator.userAgentData.brands) {
+        const brands = navigator.userAgentData.brands.map(b => b.brand);
+        if (brands.includes("Microsoft Edge")) return "Microsoft Edge";
+        if (brands.includes("Opera")) return "Opera";
+        if (brands.includes("Google Chrome")) return "Google Chrome";
+      }
+
+      // 2. Fallback to classic User Agent parsing
+      if (userAgent.indexOf("Edg") > -1) return "Microsoft Edge";
+      if (userAgent.indexOf("OPR") > -1 || userAgent.indexOf("Opera") > -1) return "Opera";
+      if (userAgent.indexOf("Chrome") > -1) return "Google Chrome";
+      if (userAgent.indexOf("Safari") > -1) return "Safari";
+      if (userAgent.indexOf("Firefox") > -1) return "Firefox";
+      if (userAgent.indexOf("MSIE") > -1 || userAgent.indexOf("Trident") > -1) return "Internet Explorer";
+      
+      return "";
+    }
+  </script>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">Heard Technologies</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#software">Software</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex" style="background-color: #600000; background-image: url('');">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">            
+            <h1 class="text-uppercase">
+              <strong>Lightcycle</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-10 mx-auto"> 
+            <img src="img/header_lightcycle.png" width="512" height="512" alt="Lightcycle Battle" style="border-radius: 20px; border: 4px solid #fff;">
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p>&nbsp;</p>            
+            <h2 class="mb-5">Designed for the <script>document.write(getBrowserName());</script> web browser</h2>
+            <a class="btn btn-secondary btn-xl js-scroll-trigger" href="#lightcycle">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-dark text-white" id="lightcycle" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/header_lightcycle_alt.png'); background-size: cover; background-position: center; background-color: rgba(50, 50, 0, 0.4); background-blend-mode: darken;">
+      <div class="container text-center">                        
+        <p>&nbsp;</p>
+        <h2 class="mb-5">They called it a game</h2>
+        <p>&nbsp;</p>
+        <h2 class="mb-5">You'll call it survival</h2>       
+        <p>&nbsp;</p>
+        <h2 class="mb-5">Can you outmaneuver your rival and claim victory in the ultimate lightcycle showdown?</h2>
+        <p>&nbsp;</p>
+        <span class="pulse-glow-blue"></span><span style="display: inline-block;width:66px;"></span><span class="pulse-glow-yellow"></span><span style="display: inline-block;width:66px;"></span><span class="pulse-glow-orange"></span>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container text-center col-lg-5 mx-auto">
+        <h2>Gameplay</h2>
+        <hr>
+        <p>The electronic arena awaits! Blast through glowing corridors on your high-speed Lightcycle as you race to capture energy pods before your relentless opponent can claim them.</p>
+        <p>&nbsp;</p>
+        <p>But beware! Every energy pod makes your trail longer, turning the arena into a deadly maze of glowing barriers. One wrong turn... one split-second mistake... and it's all over!</p>
+        <p>&nbsp;</p>
+        <p>
+          Collect energy pods to increase your score<br/>
+          Outsmart a computer-controlled opponent<br/>
+          Navigate dangerous barricades and arena hazards<br/>
+          Battle through multiple challenging arenas<br/>
+          Fast-paced arcade action for one player<br/>
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-light text-dark">
+      <div class="container text-center">                
+        <h2>Key Features</h2>
+        <hr>
+        <p>
+          Fast-paced action at incredible speeds<br/>
+          Strategic gameplay with power crystal collection<br/>
+          Intense battles against cunning cyber-riders<br/>
+          Twisting mazes of danger and excitement<br/>
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white tron-grid">
+      <div class="container text-center">        
+        <h3>Enter the Grid</h3>
+        <p><br /><a class="btn btn-primary btn-xl" href="game/" target="_new"><i class="fa-solid fa-up-right-from-square"></i> Play Now</a></p>
+        <div class="highlight" style="left:121px;top:193px;background:#67e8f9;"></div>
+        <div class="user-trail" style="left:121px;top:217px;"></div>
+        <div class="user-trail" style="left:121px;top:241px;"></div>
+        <div class="user-trail" style="left:121px;top:265px;"></div>
+        <div class="user-trail" style="left:145px;top:265px;"></div>
+
+        <div class="highlight" style="left:265px;top:73px;background:#fde047;"></div>
+
+        <div class="highlight" style="left:481px;top:241px;background:#fdba74;"></div>
+        <div class="computer-trail" style="left:481px;top:265px;"></div>     
+        <div class="computer-trail" style="left:481px;top:289px;"></div>     
+        <div class="computer-trail" style="left:481px;top:313px;"></div>          
+      </div>
+    </section>
+  
+    <section class="bg-dark text-white">
+      <div class="container text-center">        
+        <hr class="my-4">
+        <p><img src="/img/kiwi_x2.png" width="32" height="32"> Proudly designed in New&nbsp;Zealand. Copyright Heard Technologies 2018-2026</p>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/creative.min.js"></script>
+
+  </body>
+</html>
